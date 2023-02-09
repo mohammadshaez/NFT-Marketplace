@@ -205,29 +205,29 @@ input[type=radio]:checked {
 
 #slide1 {
     background: tomato;
-    background-image: url(1.jpeg);
+    background-image: url(images/1.jpeg);
 }
 
 #slide2 {
     background: yellowgreen;
-    background-image: url(2.jpeg);
+    background-image: url(images/2.jpeg);
 }
 
 #slide3 {
     background: dodgerblue;
-    background-image: url(3.jpeg);
+    background-image: url(images/3.jpeg);
 }
 
 #slide4 {
     background: slateblue;
-    background-image: url(4.jpg);
+    background-image: url(images/4.jpg);
     background-position: center;
     background-size: cover;
 }
 
 #slide5 {
     background: violet;
-    background-image: url(5.jpg);
+    background-image: url(images/5.jpg);
     background-size: cover;
 
 }
