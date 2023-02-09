@@ -5,7 +5,7 @@
 
 .header {
     margin-top: 0px;
-    min-height: 100vh;
+    min-height: auto;
     width: 90vw;
     background-position: center;
     background-size: cover;
@@ -99,6 +99,12 @@ nav {
     width: 50%;
 }
 
+@media screen and (max-width: 600px) {
+    .columns {display: block;}
+    .column-6 {width: 100%;}
+    .center {width: 100%;}
+}
+
 .leftImage {
     float: left;
     display: block;
@@ -107,7 +113,7 @@ nav {
 }
 
 .rightImage {
-    /* float: left; */
+    float: left;
     display: block;
     padding: 75px 0 0 15px;
     /* animation: slideUp 2s linear 1s ease-in; */
@@ -120,32 +126,32 @@ nav {
     box-shadow: none;
 }
 
-#sm1 {
-    position: absolute;
-    top: -10px;
-    z-index: -1;
-}
+    /* #sm1 {
+        position: absolute;
+        top: -10px;
+        z-index: -1;
+    }
 
-#sm2 {
-    position: absolute;
-    left: 50px;
-    top: 150px;
-    z-index: -1;
-}
+    #sm2 {
+        position: absolute;
+        left: 50px;
+        top: 150px;
+        z-index: -1;
+    }
 
-#sm3 {
-    position: absolute;
-    bottom: 220px;
-    left: 220px;
-    z-index: -1;
-}
+    #sm3 {
+        position: absolute;
+        bottom: 220px;
+        left: 220px;
+        z-index: -1;
+    }
 
-#sm4 {
-    position: absolute;
-    left: 670px;
-    top: 250px;
-    z-index: -1;
-}
+    #sm4 {
+        position: absolute;
+        left: 670px;
+        top: 250px;
+        z-index: -1;
+    } */
 
 .button {
     padding: 15px 30px;
@@ -175,7 +181,11 @@ h1 {
 .columnLeft h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
-    font
+    padding: 50px 0;
+}
+.center {
+    padding: 50px 0;
+    width: 100%;
 }
 
 .brands {
