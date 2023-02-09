@@ -7,7 +7,6 @@
     margin-top: 0px;
     min-height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/backgroundPic.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -15,13 +14,18 @@
 
 nav img {
     margin-left: 100px;
+    padding: 10px;
 }
 
 nav h1 {
-    color: white;
+    color: rgb(0 102 255);
     font-size: 30px;
     letter-spacing: 2px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+span {
+    color: #fcba6f;
 }
 
 nav {
@@ -47,7 +51,7 @@ nav {
 }
 
 .nav-link ul li a {
-    color: #fff;
+    color: rgb(0 102 255);
     text-decoration: none;
 }
 
@@ -55,7 +59,7 @@ nav {
     content: '';
     width: 0;
     height: 3px;
-    background: red;
+    background: #fcba6f;
     display: block;
     margin: auto;
     transition: 1s;
@@ -68,12 +72,39 @@ nav {
 
 /* collection */
 
+.wrapper {
+    font-size: 6rem;
+    font-family: "Play", sans-serif;
+    text-align: center;
+}
+
+.neon h3 {
+    margin: 1rem auto;
+    animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+
+    0%,
+    100% {
+        text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+        color: #3700ff;
+    }
+
+    50% {
+        text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+        color: #fcba6f;
+    }
+}
+
 .heading {
     font-size: 80px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    text-shadow: 2px 4px 3px #FF0000, 2px 4px 5px blue;
-    transition: 10s;
+    text-shadow: 2px 4px 3px #3700ff, 2px 4px 5px rgb(255, 255, 255);
+    transition: 4s;
+    color: #fcba6f !important;
+    text-align: center;
 }
 
 .heading:hover {
@@ -93,7 +124,7 @@ nav {
     height: 300px;
     padding: 30px;
     margin: 20px;
-    box-shadow: 5px 6px 10px rgb(157, 146, 146);
+    box-shadow: 5px 6px 10px rgb(255, 255, 255);
     border-radius: 20px;
     cursor: pointer;
     transition: 20s;
